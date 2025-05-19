@@ -1,3 +1,4 @@
+teplates="""
 <!DOCTYPE html>
 <html>
 <head>
@@ -653,3 +654,8 @@
     </script>
 </body>
 </html>
+"""
+import os
+os.makedirs("templates")
+with open("templates/index.html", "w") as f
+    f.write(templates)
