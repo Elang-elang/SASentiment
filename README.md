@@ -36,24 +36,30 @@ The Sentiment Analysis System is an advanced Flask-based web application that pe
 |-----------|---------|
 | `app.py` | Main application with Flask routes and WebSocket handlers |
 | `load_models.py` | Downloads the pre-trained TensorFlow model |
+| `create_html.py` | Create directory `templates` and create index.html for template |
 | `positive_words.csv` | Custom lexicon of positive sentiment words |
 | `negative_words.csv` | Custom lexicon of negative sentiment words |
 
 ## Example Usage
 
-1. **Run the application**:
+1. **Create templates**:
+   ```bash
+   python create_html.py
+   ```
+
+2. **Run the application**:
    ```bash
    python app.py
    ```
 
-2. **Access the web interface** at `http://localhost:5000`
+3. **Access the web interface** at `http://localhost:5000`
 
-3. **Submit text** for analysis through:
+4. **Submit text** for analysis through:
    - Web form
    - REST API (`POST /api/sentimen`)
    - WebSocket (`request_analisis` event)
 
-4. **View results** including:
+5. **View results** including:
    - Sentiment label (positive/negative/neutral)
    - Confidence score
    - Positive words detected
