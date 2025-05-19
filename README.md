@@ -42,7 +42,7 @@ The Sentiment Analysis System is an advanced Flask-based web application that pe
 
 ## Example Usage
 
-1. **Create templates**:
+1. **Create template's folders**:
    ```bash
    python create_html.py
    ```
